@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+body {
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.field {
+    margin: auto auto;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #000000;
+}
+.field .net {
+    width: 0;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 3px;
+    border-style: dotted;
+    border-color: #000000;
+}
+.field .ping, .field .pong {
+    width: 7px;
+    height: 40px;
+    position: absolute;
+    background: #000000;
+}
+.field .ping {
+    left: 6%;
+    animation: ping 10s infinite linear;
+}
+.field .pong {
+    right: 6%;
+    animation: pong 10s infinite linear;
+}
+.field .ball {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background: #000000;
+    animation: ball 10s infinite linear;
+}
+
+      @keyframes ball {
+          0% {
+              top: 34%;
+              left: 52%;
+          }
+          8.3% {
+              top: 52%;
+              left: 90%;
+          }
+          24.9% {
+              top: 85%;
+              left: 8%;
+          }
+          30% {
+              top: 98%;
+              left: 27%;
+          }
+          41.5% {
+              top: 70%;
+              left: 90%;
+          }
+          58.1% {
+              top: 55%;
+              left: 8%;
+          }
+          74.7% {
+              top: 13%;
+              left: 90%;
+          }
+          79% {
+              top: 1%;
+              left: 70%;
+          }
+          91.3% {
+              top: 22%;
+              left: 8%;
+          }
+          100% {
+              top: 34%;
+              left: 52%;
+          }
+      }
+      @keyframes ping {
+          0% {
+              top: 10%;
+          }
+          5% {
+              top: 10%;
+          }
+          9% {
+              top: 24%;
+          }
+          13% {
+              top: 17%;
+          }
+          24.9% {
+              top: 82%;
+          }
+          47% {
+              top: 37%;
+          }
+          52% {
+              top: 41%;
+          }
+          56% {
+              top: 64%;
+          }
+          58.1% {
+              top: 54%;
+          }
+          70% {
+              top: 74%;
+          }
+          84% {
+              top: 12%;
+          }
+          91.3% {
+              top: 18%;
+          }
+          100% {
+              top: 10%;
+          }
+      }
+      @keyframes pong {
+          0% {
+              top: 90%;
+          }
+          8.3% {
+              top: 51%;
+          }
+          20% {
+              top: 60%;
+          }
+          25% {
+              top: 34%;
+          }
+          41.5% {
+              top: 68%;
+          }
+          46% {
+              top: 36%;
+          }
+          52% {
+              top: 18%;
+          }
+          58.1% {
+              top: 53%;
+          }
+          66% {
+              top: 14%;
+          }
+          70% {
+              top: 20%;
+          }
+          74.7% {
+              top: 10%;
+          }
+          91.3% {
+              top: 10%;
+          }
+          100% {
+              top: 90%;
+          }
+      }
+    </style>
+    <!-- <script src=""></script> -->
+    <body>
+
+        <div class="field">
+            <div class="net"></div>
+            <div class="ping"></div>
+            <div class="pong"></div>
+            <div class="ball"></div>
+        </div>
+
+    </body>
+</html>
